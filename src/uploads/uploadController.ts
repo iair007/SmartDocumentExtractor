@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { processDocument } from "../openaiService";
+import { processDocument } from "../extractDataService";
 
 export const handleFileUpload = async (req: Request, res: Response) => {
   if (!req.file) {
